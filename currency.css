@@ -6,7 +6,7 @@
 }
 body {
  display: flex;
- padding-top:7rem;
+ padding-top:4rem;
  justify-content: center;
  min-height: 100vh;
  background-color: #2f363e;
@@ -79,12 +79,12 @@ form .select-box select {
  width: auto;
  font-size: 16px;
  margin: 0 -5px 0 5px;
-background: transparent ;
+background: transparent;
 color:#fff;
 }
 form .select-box select option {
  padding: 5px;
- background: transparent ;
+ background: transparent;
 color:#fff;
 }
 form .select-box img {
