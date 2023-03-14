@@ -84,7 +84,6 @@ let country_list = {
  LBP: "LB",
  LKR: "LK",
  LRD: "LR",
- LSL: "LS",
  LTL: "LT",
  LVL: "LV",
  LYD: "LY",
@@ -181,29 +180,13 @@ let selecttwo = document.querySelector(".two");
   let option2 = `<option value="EGP" selected>EGP ${getFlagEmoji(country_list["EGP"])}</option>`;
   selectone.insertAdjacentHTML("beforeend", option1);
   selecttwo.insertAdjacentHTML("beforeend", option2);
-for (let i = 0; i < dropList.length; i++) {
+
  for (coun in country_list) {
-  let selected;
-  if (i == 0) {
-   selected = coun == "USD" ? "selected" : "";
-  } else if (i == 1) {
-   selected = coun == "EGP" ? "selected" : "";
-  }
   let option = `<option value="${coun}">${coun} ${getFlagEmoji(country_list[coun])}</option>`;
   selectone.insertAdjacentHTML("beforeend", option);
   selecttwo.insertAdjacentHTML("beforeend", option);
  }
-}
-function loadFlag(e) {
- for (coun in country_list) {
-  if (coun == e.value) {
-   let imgTag = e.parentElement.querySelector("img");
-   imgTag.src = `https://flagcdn.com/w40/${country_list[
-    coun
-   ].toLowerCase()}.png`;
-  }
- }
-}
+
 window.addEventListener("load", () => {
  getEchangerRate();
 });
