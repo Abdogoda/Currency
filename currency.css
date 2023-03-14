@@ -79,22 +79,13 @@ form .select-box select {
  width: auto;
  font-size: 16px;
  margin: 0 -5px 0 5px;
-background: transport !important;
-}
-.select-box select::-webkit-scrollbar {
- width: 8px;
-}
-.select-box select::-webkit-scrollbar-track {
- background-color: #fff;
-}
-.select-box select::-webkit-scrollbar-thumb {
- background-color: #f0f;
- border-radius: 8px;
- border-right: 2px solid #fff;
+background: transport ;
+color:#fff;
 }
 form .select-box select option {
  padding: 5px;
- color: #333;
+ background: transport ;
+color:#fff;
 }
 form .select-box img {
  max-width: 25px;
