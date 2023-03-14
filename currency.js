@@ -177,6 +177,10 @@ let toCurrency = document.querySelector(".to select");
 let dropList = document.querySelectorAll("select");
 let selectone = document.querySelector(".one");
 let selecttwo = document.querySelector(".two");
+  let option1 = `<option value="USD" selected>USD ${getFlagEmoji(country_list["USD"])}</option>`;
+  let option2 = `<option value="EGP" selected>EGP ${getFlagEmoji(country_list["EGP"])}</option>`;
+  selectone.insertAdjacentHTML("beforeend", option1);
+  selecttwo.insertAdjacentHTML("beforeend", option2);
 for (let i = 0; i < dropList.length; i++) {
  for (coun in country_list) {
   let selected;
@@ -185,10 +189,6 @@ for (let i = 0; i < dropList.length; i++) {
   } else if (i == 1) {
    selected = coun == "EGP" ? "selected" : "";
   }
-  let option1 = `<option value="USD">USD ${getFlagEmoji(country_list["USD"])}</option>`;
-  let option2 = `<option value="EGP">EGP ${getFlagEmoji(country_list["EGP"])}</option>`;
-  selectone.insertAdjacentHTML("beforeend", option1);
-  selecttwo.insertAdjacentHTML("beforeend", option2);
   let option = `<option value="${coun}">${coun} ${getFlagEmoji(country_list[coun])}</option>`;
   selectone.insertAdjacentHTML("beforeend", option);
   selecttwo.insertAdjacentHTML("beforeend", option);
