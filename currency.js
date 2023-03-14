@@ -64,7 +64,6 @@ let country_list = {
  HTG: "HT",
  HUF: "HU",
  IDR: "ID",
- ILS: "IL",
  INR: "IN",
  IQD: "IQ",
  IRR: "IR",
@@ -178,7 +177,6 @@ let toCurrency = document.querySelector(".to select");
 let dropList = document.querySelectorAll("select");
 let selectone = document.querySelector(".one");
 let selecttwo = document.querySelector(".two");
-//Generate flag emoji 
 for (let i = 0; i < dropList.length; i++) {
  for (coun in country_list) {
   let selected;
@@ -191,9 +189,6 @@ for (let i = 0; i < dropList.length; i++) {
   selectone.insertAdjacentHTML("beforeend", option);
   selecttwo.insertAdjacentHTML("beforeend", option);
  }
- dropList[i].addEventListener("change", (e) => {
-  loadFlag(e.target);
- });
 }
 function loadFlag(e) {
  for (coun in country_list) {
