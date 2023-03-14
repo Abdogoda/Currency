@@ -79,12 +79,12 @@ form .select-box select {
  width: auto;
  font-size: 16px;
  margin: 0 -5px 0 5px;
-background: transport ;
+background: transparent ;
 color:#fff;
 }
 form .select-box select option {
  padding: 5px;
- background: transport ;
+ background: transparent ;
 color:#fff;
 }
 form .select-box img {
