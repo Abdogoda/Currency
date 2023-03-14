@@ -169,7 +169,7 @@ function getFlagEmoji(countryCode) {
 
     .map(char =>  127397 + char.charCodeAt());
 
-  console.log(String.fromCodePoint(...codePoints)) ;
+  return String.fromCodePoint(...codePoints) ;
 
 }
 let button = document.querySelector("form button");
@@ -187,7 +187,7 @@ for (let i = 0; i < dropList.length; i++) {
   } else if (i == 1) {
    selected = coun == "EGP" ? "selected" : "";
   }
-  let option = `<option value="${coun}">${coun getFlagEmoji(country_list[coun])}</option>`;
+  let option = `<option value="${coun}">${coun} ${getFlagEmoji(country_list[coun])}</option>`;
   selectone.insertAdjacentHTML("beforeend", option);
   selecttwo.insertAdjacentHTML("beforeend", option);
  }
