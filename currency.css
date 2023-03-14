@@ -6,7 +6,7 @@
 }
 body {
  display: flex;
- padding-top:4rem;
+ padding-top: 4rem;
  justify-content: center;
  background-color: #2f363e;
 }
@@ -19,7 +19,7 @@ body {
  width: 370px;
  max-width: 95%;
  border-radius: 20px;
- padding: 30px 20px;
+ padding: 30px 20px;height: auto;
 }
 .wrapper header {
  font-size: 28px;
