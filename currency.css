@@ -79,6 +79,7 @@ form .select-box select {
  width: auto;
  font-size: 16px;
  margin: 0 -5px 0 5px;
+background: transport !important;
 }
 .select-box select::-webkit-scrollbar {
  width: 8px;
