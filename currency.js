@@ -202,8 +202,6 @@ exchangeIcon.addEventListener("click", () => {
  fromCurrency.value = toCurrency.value;
  toCurrency.value = tempCode;
  getEchangerRate();
- loadFlag(fromCurrency);
- loadFlag(toCurrency);
 });
 
 function getEchangerRate() {
@@ -220,7 +218,7 @@ function getEchangerRate() {
   .then((response) => response.json())
   .then((result) => {
    let exchangerate = result.conversion_rates[toCurrency.value];
-   let TotalExchangerRate = (amountValue * exchangerate).toFixed(2);
+   let TotalExchangerRate = (amountValue * exchangerate).toFixed(2).toLocaleString('en-US');
    exchangerRateResult.innerHTML = `${amountValue} ${fromCurrency.value} = ${TotalExchangerRate} ${toCurrency.value}`;
   })
   .catch(() => {
