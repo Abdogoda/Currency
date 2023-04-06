@@ -84,8 +84,16 @@ color:#fff;
 form .select-box select option {
  padding: 5px;
  background: transparent;
-color:#fff;
+color:#333;
 }
+@media (max-width:500px){
+form .select-box select option {
+ padding: 5px;
+ background: transparent;
+color:#fff;
+ }}
+
+ 
 form .select-box img {
  max-width: 25px;
 }
